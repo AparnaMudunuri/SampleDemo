@@ -132,7 +132,7 @@ def my_form_post():
     
     img = get_item(bucket_name, item_name)
 
-    return render_template("index.html", user_image = url_dict['img'])
+    return render_template("index.html", user_image = img)
 
 
 # In[ ]:
