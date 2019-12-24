@@ -85,7 +85,7 @@ def my_form_post():
         
 
 
-    return render_template("index.html", user_image = url_dict['URL'])
+    return render_template("index.html", user_image = url_dict['u'])
 
 
 # In[ ]:
