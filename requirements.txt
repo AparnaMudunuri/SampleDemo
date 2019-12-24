@@ -1,6 +1,7 @@
 Flask==1.1.1
 pymysql==0.9.3
 config==0.4.2
-ibm_boto3==1.4.7
-ibm_botocore==1.7.48
 requests==2.21.0
+ibm-cos-sdk==2.6.0
+ibm-cos-sdk-core==2.6.0
+ibm-cos-sdk-s3transfer==2.6.0
