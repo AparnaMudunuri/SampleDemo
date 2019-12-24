@@ -117,14 +117,14 @@ def my_form_post():
     print(select_key)
         
     def get_item(bucket_name, item_name):
-    print("Retrieving item {0} from bucket {1}".format(item_name, bucket_name))
-    try:
+      print("Retrieving item {0} from bucket {1}".format(item_name, bucket_name))
+      try:
         obj = cos.Object(bucket_name, item_name).get()
         v2= obj['Body'].read()
         return obj['Body'].read()
-    except ClientError as be:
+      except ClientError as be:
         print("CLIENT ERROR: {0}\n".format(be))
-    except Exception as e:
+      except Exception as e:
         print("Unable to retrieve file contents: {0}".format(e))
         
     bucket_name = "gamification-cos-standard-tkq"
